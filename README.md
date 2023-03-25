@@ -39,38 +39,7 @@
 
 ## Sources Used
 
-### 1: Tutorial5/route.js.js
-
-*Lines 3,4,79*
-
-```
-
-The code above was created by adapting the code in [jeanlescure](https://www.npmjs.com/package/short-unique-id) as shown below: 
-
-
-```
-*reference code:*
-  ```  
-const uid = new ShortUniqueId({ length: 10 });
-uid(); // p0ZoB1FwH6
-``` 
-    
-*mycode:*
-``` 
-const ShortUniqueId = require("short-unique-id");
-const uid = new ShortUniqueId({ length: 10 });
-const input = req.body;
-input["id"] = uid();
-``` 
-- <!---How---> The code in [jeanlescure](https://www.npmjs.com/package/short-unique-id)was implemented by...
-``` jeanlescure made a npm library to generate short uuid```
-
-- <!---Why---> [jeanlescure](https://www.npmjs.com/package/short-unique-id)'s Code was used because...
-``` I needed uuid which is short in length like 10 digit when new user is added.``` 
-  
-- <!---How---> [jeanlescure](https://www.npmjs.com/package/short-unique-id)'s Code was modified by...
-``` I used inside json object to to create new object and pushed to json object array``` 
-
 
 ## Other references
 1. https://dal.brightspace.com/d2l/le/content/250793/viewContent/3445551/View
+2. https://mongoosejs.com/docs/
